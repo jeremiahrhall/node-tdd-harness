@@ -1,0 +1,29 @@
+{
+  "name": "node-tdd-harness",
+  "version": "0.0.0",
+  "description": "A simple project to provide a harness/sandbox to explore ideas and new libraries",
+  "main": "server.js",
+  "scripts": {
+    "test": "PORT=3010 NODE_ENV=test mocha -R spec -r test/testincludes test/**/*Spec.js -t 5000"
+  },
+  "repository": "",
+  "author": "Jeremiah Hall <jeremiah.hall@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "supertest": "*",
+    "should": "*",
+    "grunt-mocha-test": "*",
+    "mocha": "*",
+    "grunt": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "baucis": "^1.0.0-candidate.12",
+    "express": "*",
+    "moment": "*",
+    "mongoose": "*",
+    "supertest": "^0.15.0",
+    "underscore": "*"
+  }
+}
